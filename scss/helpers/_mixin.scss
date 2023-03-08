@@ -1,0 +1,29 @@
+// Reset List Element
+@mixin reset-li {
+    list-style: none;
+}
+
+@mixin reset-links {
+    text-decoration: none;
+}
+
+@mixin reset-input-field {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+@mixin beforeAfter {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $main-color;
+    border-radius: 5px;
+    transition: $transition;
+}
